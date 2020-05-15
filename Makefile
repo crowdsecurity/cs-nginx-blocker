@@ -1,7 +1,7 @@
 export BUILD_VERSION=$(shell cat RELEASE.json | jq -r .Version)
 OUTDIR="cs-nginx-blocker-v${BUILD_VERSION}/"
 LUA_MOD_DIR="${OUTDIR}lua-mod"
-OUT_ARCHIVE="cs-nginx-blocker-v${BUILD_VERSION}.tgz"
+OUT_ARCHIVE="cs-nginx-blocker.tgz"
 default: release
 release: 
 	git clone https://github.com/crowdsecurity/cs-lua-lib.git
