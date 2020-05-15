@@ -54,19 +54,9 @@ git clone https://github.com/crowdsecurity/cs-nginx-blocker.git
 
 #### cs-lua-lib
 
-- Create folder `/usr/local/lua/crowdsec/`:
 ```
-mkdir -p /usr/local/lua/crowdsec/
-```
-
-- Copy the `cs-lua-lib/lib/*.lua` into `/usr/local/lua/crowdsec/`:
-```
-cp ./cs-lua-lib/lib/*.lua /usr/local/lua/crowdsec
-```
-
-- Copy the `cs-lua-lib/template.conf` into `/usr/local/lua/crowdsec/crowdsec.conf`:
-```
-cp ./cs-lua-lib/template.conf /usr/local/lua/crowdsec/crowdsec.conf
+cd ./cs-lua-lib/
+sudo make install
 ```
 
 #### cs-nginx-blocker
