@@ -1,4 +1,4 @@
-# cs-nginx-blocker
+# CrowdSec NGINX Blocker
 
 A lua blocker for nginx.
 
