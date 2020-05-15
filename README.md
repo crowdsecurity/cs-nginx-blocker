@@ -2,6 +2,11 @@
 
 A lua blocker for nginx.
 
+
+# Documentation
+
+Please find the documentation [here](https://docs.crowdsec.net/blockers/nginx/installation/).
+
 # Installation
 
 ## Install script
@@ -13,6 +18,8 @@ tar xvzf cs-nginx-blocker.tgz
 cd cs-nginx-blocker-v0.0.1
 sudo ./install.sh
 ```
+
+:warning: the installation script works only on Debian/Ubuntu
 
 ## From source
 
