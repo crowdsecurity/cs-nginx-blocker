@@ -3,19 +3,6 @@
 :diamond_shape_with_a_dot_inside: [Hub](https://hub.crowdsec.net)
 :speech_balloon: [Discourse](https://discourse.crowdsec.net)
 
-<!-- 
-<p align="center">
-<img src="docs/assets/crowdsec_nginx_logo.png" alt="CrowdSec" title="CrowdSec" width="280" height="400" />
-</p>
-<p align="center">
-<img src="https://img.shields.io/badge/build-pass-green">
-<img src="https://img.shields.io/badge/tests-pass-green">
-</p>
-<p align="center">
-:books: <a href="https://docs.crowdsec.net/blockers/nginx/installation/">Documentation</a>
-:diamond_shape_with_a_dot_inside: <a href="https://hub.crowdsec.net">Hub</a>
-:speech_balloon: <a href="https://discourse.crowdsec.net">Discourse </a>
-</p> -->
 
 # CrowdSec NGINX Blocker
 
