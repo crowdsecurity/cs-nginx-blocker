@@ -1,6 +1,6 @@
 [](https://github.com/crowdsecurity/cs-nginx-blocker/raw/master/docs/assets/crowdsec_nginx_logo.png)
 
-
+<!-- 
 <p align="center">
 <img src="docs/assets/crowdsec_nginx_logo.png" alt="CrowdSec" title="CrowdSec" width="280" height="400" />
 </p>
@@ -12,7 +12,7 @@
 :books: <a href="https://docs.crowdsec.net/blockers/nginx/installation/">Documentation</a>
 :diamond_shape_with_a_dot_inside: <a href="https://hub.crowdsec.net">Hub</a>
 :speech_balloon: <a href="https://discourse.crowdsec.net">Discourse </a>
-</p>
+</p> -->
 
 # CrowdSec NGINX Blocker
 
