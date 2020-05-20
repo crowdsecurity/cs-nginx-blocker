@@ -1,4 +1,7 @@
-[](https://github.com/crowdsecurity/cs-nginx-blocker/raw/master/docs/assets/crowdsec_nginx_logo.png)
+![](https://github.com/crowdsecurity/cs-nginx-blocker/raw/master/docs/assets/crowdsec_nginx_logo.png)
+:books: [Documentation](https://doc.crowdsec.net)
+:diamond_shape_with_a_dot_inside: [Hub](https://hub.crowdsec.net)
+:speech_balloon: [Discourse](https://discourse.crowdsec.net)
 
 <!-- 
 <p align="center">
