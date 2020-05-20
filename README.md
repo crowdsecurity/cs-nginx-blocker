@@ -1,3 +1,6 @@
+[](https://github.com/crowdsecurity/cs-nginx-blocker/raw/master/docs/assets/crowdsec_nginx_logo.png)
+
+
 <p align="center">
 <img src="docs/assets/crowdsec_nginx_logo.png" alt="CrowdSec" title="CrowdSec" width="280" height="400" />
 </p>
