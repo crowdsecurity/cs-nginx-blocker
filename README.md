@@ -47,19 +47,19 @@ The following packages are required :
 
 #### Debian/Ubuntu
 
-```
+```bash
 sudo apt-get install lua5.3 libnginx-mod-http-lua lua-sql-sqlite3 lua-logging
 ```
 
 Download the following 2 repositories:
 
 - [`cs-lua-lib`](https://github.com/crowdsecurity/cs-lua-lib):
-```
+```bash
 git clone https://github.com/crowdsecurity/cs-lua-lib.git
 ```
 
 - [`cs-nginx-blocker`](https://github.com/crowdsecurity/cs-nginx-blocker)
-```
+```bash
 git clone https://github.com/crowdsecurity/cs-nginx-blocker.git
 ```
 
@@ -67,7 +67,7 @@ git clone https://github.com/crowdsecurity/cs-nginx-blocker.git
 
 #### cs-lua-lib
 
-```
+```bash
 cd ./cs-lua-lib/
 sudo make install
 ```
@@ -75,16 +75,16 @@ sudo make install
 #### cs-nginx-blocker
 
 - Copy the `cs-nginx-blocker/nginx/crowdsec_nginx.conf` into `/etc/nginx/conf.d/crowdsec_nginx.conf`:
-```
+```bash
 cp ./cs-nginx-blocker/nginx/crowdsec_nginx.conf /etc/nginx/conf.d/crowdsec_nginx.conf
 ```
 - Copy the `cs-nginx-blocker/nginx/access.lua` into `/usr/local/lua/crowdec/access.lua`:
-```
+```bash
 cp ./cs-nginx-blocker/nginx/access.lua /usr/local/lua/crowdec/access.lua
 ```
 
 You can now restart your nginx server:
-```
+```bash
 systemctl restart nginx
 ```
 
