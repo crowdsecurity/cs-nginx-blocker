@@ -42,13 +42,14 @@ The following packages are required :
 
 - lua
 - lua-sql-sqlite3
+- lua-sql-mysql
 - lua-logging
 - libnginx-mod-http-lua
 
 #### Debian/Ubuntu
 
 ```bash
-sudo apt-get install lua5.3 libnginx-mod-http-lua lua-sql-sqlite3 lua-logging
+sudo apt-get install lua5.3 libnginx-mod-http-lua lua-sql-sqlite3 lua-sql-mysql lua-logging
 ```
 
 Download the following 2 repositories:
