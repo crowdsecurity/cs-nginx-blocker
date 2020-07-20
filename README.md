@@ -35,6 +35,7 @@ Download the latest release [here](https://github.com/crowdsecurity/cs-nginx-blo
 tar xvzf cs-nginx-blocker.tgz
 cd cs-nginx-blocker-v0.0.1
 sudo ./install.sh
+systemctl restart nginx
 ```
 
 :warning: the installation script will take care of dependencies for Debian/Ubuntu
@@ -102,6 +103,49 @@ cp ./cs-nginx-blocker/nginx/access.lua /usr/local/lua/crowdec/access.lua
 You can now restart your nginx server:
 ```bash
 systemctl restart nginx
+```
+
+
+# Configuration
+
+The configuration file loaded by nginx is `/etc/nginx/conf.d/crowdsec_nginx.conf`, but you shouldn't have to edit it, the relevant configuration file being `/usr/local/lua/crowdsec/crowdsec.conf` :
+
+
+```bash
+# supported DATABASES : sqlite3, mysql
+#DB_PATH is only for sqlite3
+TYPE=sqlite3
+DB_PATH=/var/lib/crowdsec/data/crowdsec.db
+# Those parameters are only relevant for MySQL
+#DB_NAME=
+#DB_HOST=
+#DB_PORT=
+#DB_USERNAME=
+#DB_PASSWORD=
+# Where does the lua code put its logs
+LOG_FILE=/tmp/lua_mod.log
+# How many seconds is the information about an IP kept in cache
+CACHE_EXPIRATION=1
+# Cache size
+CACHE_SIZE=1000
+```
+
+
+
+If instead of using SQLite you want to use MySQL, the configuration file will look like this :
+```bash
+# supported DATABASES : sqlite3, mysql
+# DB_PATH is only for sqlite3
+TYPE=mysql
+DB_NAME=crowdsec
+DB_HOST=localhost
+# If you need a specific port
+#DB_PORT=
+DB_USERNAME=crowdsec
+DB_PASSWORD=password
+LOG_FILE=/tmp/lua_mod.log
+CACHE_EXPIRATION=1
+CACHE_SIZE=1000
 ```
 
 
