@@ -40,10 +40,11 @@ sudo ./install.sh
 :warning: the installation script will take care of dependencies for Debian/Ubuntu
 <details>
   <summary>non-debian based dependencies</summary>
- - libnginx-mod-http-lua : nginx lua support
- - lua-sql-sqlite3 : for SQLite support
- - lua-sql-mysql : for MySQL support
- - lua-logging : logging
+
+  - libnginx-mod-http-lua : nginx lua support
+  - lua-sql-sqlite3 : for SQLite support
+  - lua-sql-mysql : for MySQL support
+  - lua-logging : logging
 </details>
 
 
