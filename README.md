@@ -11,14 +11,19 @@
 &#128172; <a href="https://discourse.crowdsec.net">Discourse </a>
 </p>
 
+
+
 # CrowdSec NGINX Blocker
 
 A lua blocker for nginx.
 
+## How does it work ?
 
-# Documentation
+This blocker leverages nginx lua's API, namely `access_by_lua_file`.
 
-Please find the documentation [here](https://docs.crowdsec.net/blockers/nginx/installation/).
+New/unknown IP are checked against crowdsec's database, and if request should be blocked, a **403** is returned to the user, and put in cache.
+
+At the back, this blocker uses [crowdsec lua lib](https://github.com/crowdsecurity/cs-lua-lib/).
 
 # Installation
 
@@ -32,7 +37,16 @@ cd cs-nginx-blocker-v0.0.1
 sudo ./install.sh
 ```
 
-:warning: the installation script works only on Debian/Ubuntu
+:warning: the installation script will take care of dependencies for Debian/Ubuntu
+<details>
+  <summary>non-debian based dependencies</summary>
+ - libnginx-mod-http-lua : nginx lua support
+ - lua-sql-sqlite3 : for SQLite support
+ - lua-sql-mysql : for MySQL support
+ - lua-logging : logging
+</details>
+
+
 
 ## From source
 
