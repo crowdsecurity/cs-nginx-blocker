@@ -12,6 +12,8 @@
 </p>
 
 
+::warning:: This blocker will only work with crowdsec < 1.0 and must be considered deprecated. Please see the [cs-nginx-bouncer](https://github.com/crowdsecurity/cs-nginx-bouncer) instead ::warning::
+
 
 # CrowdSec NGINX Blocker
 
