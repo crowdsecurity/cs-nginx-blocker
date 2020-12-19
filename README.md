@@ -97,9 +97,9 @@ sudo make install
 ```bash
 cp ./cs-nginx-blocker/nginx/crowdsec_nginx.conf /etc/nginx/conf.d/crowdsec_nginx.conf
 ```
-- Copy the `cs-nginx-blocker/nginx/access.lua` into `/usr/local/lua/crowdec/access.lua`:
+- Copy the `cs-nginx-blocker/nginx/access.lua` into `/usr/local/lua/crowdsec/access.lua`:
 ```bash
-cp ./cs-nginx-blocker/nginx/access.lua /usr/local/lua/crowdec/access.lua
+cp ./cs-nginx-blocker/nginx/access.lua /usr/local/lua/crowdsec/access.lua
 ```
 
 You can now restart your nginx server:
